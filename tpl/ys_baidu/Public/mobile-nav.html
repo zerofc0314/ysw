@@ -1,0 +1,44 @@
+<div id="mobile-nav" class="visible-xs visible-sm">
+    <header>
+        <div class="container-fluid">
+            <ul class="menu-header">
+                <li class="pull-left">
+                    <a href="/" class="logo">
+                        <figure>
+                            <img src="__TMPL__Static/img/logo.png" alt="{$site_name}"/>
+                        </figure>
+                    </a>
+                </li>
+                <li class="reorder pull-right"><a href="#" title=""><i class="fa fa-bars"></i></a></li>
+            </ul>
+        </div>
+    </header>	
+    <div class="" id="flyout-container">
+        <ul id="mobile-navbar" class="nav flyout-menu main-nav nav-height">
+
+            <?php
+            $main_nav = _sp_get_menu_datas("0",0);
+            ?>
+            <foreach name="main_nav" item="vo">
+                <li class="nav-item">
+                    <a href="{$vo.href}" >{$vo.label}</a>
+                    <?php 
+                    $sub_menu = _sp_get_menu_datas("0",$vo['id']);
+                    ?>
+                <if condition='!empty($sub_menu)'>
+                    <span class="open-children"><i class="fa fa-angle-down"></i></span>
+                    <ul class="subnav">
+                        <foreach name="sub_menu" item="sub">
+                            <li>
+                                <a href="{$sub.href}" class=""><span>{$sub.label}</span></a>
+                            </li>
+                        </foreach> 
+
+                    </ul>
+                </if>
+                </li>
+            </foreach>
+        </ul>
+    </div>
+</div>
+

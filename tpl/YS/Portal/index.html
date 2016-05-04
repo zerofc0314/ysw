@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+                <tc_include file="Public:seo" />
+                <link href="__TMPL__Public/Css/index.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="__TMPL__Public/Css/swiper.3.2.7.min.css">
+	</head>
+
+               
+	<body>
+    
+             <tc_include file="Public:header" />
+               
+		<div class="conter">
+                    
+			<tc_include file="Public:animation" />
+                    
+			<!--conter_nav 开始 -->
+			<div class="conter_nav">
+                            
+                           <php>
+                                $campaigns=sp_sql_posts_bycatid(19,'field:tid,post_title,post_date;limit:5;order:post_date desc;');
+                                
+                            </php>
+                              
+				<div class="conter_left">
+					<div class="conter_product">
+						<span><img src="__TMPL__Public/Images/New_Product.png"></span>
+						<span class="conter_s"><a href="{:U('Portal/list/index','id=19')}">更多<img src="__TMPL__Public/Images/more.png"></a></span>
+					</div>
+					<div class="conter_ol">
+						<ol>
+                                                    <volist name="campaigns" id="v">
+                                                        <php>
+                                                            $camp_date=date('Y-m-d',$v['post_date']);
+                                                            $camp_title=substr($v['post_title'],0,33);
+                                                        </php>
+                                                    <li>
+                                                        <a href="{:leuu('Portal/article/index',array('id'=>$v['tid']))}">&gt; {$camp_title}...   <span class="conter_date">{$camp_date}</span></a><br/>
+                                                    </li>
+                                                    </volist>
+						</ol>
+					</div>
+				</div>
+
+                             
+                            <php>
+                                $products=sp_sql_posts_bycatid(11,'field:tid,post_title,smeta;order:post_date desc;');
+                            </php>
+                               
+                               
+				<div class="conter_right">
+					<div class="conter_show"><img src="__TMPL__Public/Images/product.png"></div>
+					<div class="swiper-container" id="swiper-container2">
+                                            
+						<div class="swiper-wrapper" id="swiper-wrapper2">
+                                     
+                                                    <volist name="products" id="vo">
+                                                        
+                                                        <php>
+                                                            $smeta=json_decode($vo['smeta'], true);
+                                                        </php>
+                                                       
+							<div class="swiper-slide" ><!--id="swiper-slide2"-->
+								<a href="{:leuu('Portal/article/index',array('id'=>$vo['tid']))}">
+                                                                    <img src="{:sp_get_asset_upload_path($smeta['thumb'])}"  style="width:99px;height:99px;" />
+                                                                </a>
+							</div>
+                                                      
+                                                    </volist>
+                                                      
+						</div>
+                                            
+						<!-- Add Arrows 添加圆点 -->
+						<div class="swiper-pagination" id="swiper-pagination2"></div>
+						<!-- Add Arrows 添加箭头 -->
+						<div class="swiper-button-next" id="swiper-button-next2"></div>
+						<div class="swiper-button-prev" id="swiper-button-prev2"></div>
+					</div>
+
+				</div>
+			</div>
+			<!--conter_nav 结束 -->
+		</div>
+             
+		<tc_include file="Public:footer" />
+
+                
+                <script>
+			var swiper = new Swiper('#swiper-container2', {
+				pagination: '#swiper-pagination2',
+				slidesPerView: 5,
+				paginationClickable: true,
+				spaceBetween: 20,
+				nextButton: '#swiper-button-next2',
+				prevButton: '#swiper-button-prev2',
+			});
+		</script>
+                
+                
+	</body>
+
+</html>

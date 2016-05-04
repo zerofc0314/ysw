@@ -1,0 +1,14 @@
+[ 2016-01-19T10:08:52+08:00 ] 127.0.0.1 /index.php?g=Admin&m=setting&a=site_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001048s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004049s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ax_options` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `ax_options` WHERE ( option_name='site_options' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `ax_options` SET `option_id`='2',`option_name`='site_options',`option_value`='{\"site_name\":\"\\u540c\\u521b\\u5b8f\\u5f00\\u517b\\u751f\\u7fc1\",\"site_host\":\"http:\\/\\/www.bendibase.com\\/\",\"site_tpl\":\"YS\",\"site_adminstyle\":\"bluesky\",\"site_icp\":\"\",\"site_admin_email\":\"860003286@qq.com\",\"site_tongji\":\"\",\"site_copyright\":\"\",\"site_seo_title\":\"\\u57fa\\u7840\\u63a7\\u5236\\u5305\",\"site_seo_keywords\":\"\",\"site_seo_description\":\"\\u5185\\u5bb9\\u7ba1\\u7406\\u6846\\u67b6\",\"urlmode\":\"0\",\"html_suffix\":\"\",\"comment_time_interval\":60}' WHERE ( option_name='site_options' ) [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_options` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `ax_options` WHERE ( option_name='cmf_settings' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ax_options` SET `option_name`='cmf_settings',`option_value`='{\"banned_usernames\":\"\"}' WHERE ( option_name='cmf_settings' ) [ RunTime:0.0001s ]
+

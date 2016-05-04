@@ -1,0 +1,426 @@
+[ 2016-01-19T11:25:21+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002141s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0033s ]
+SQL: UPDATE `ax_terms` SET `parent`='0',`name`='产品中心',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='article' WHERE `term_id` = '11' [ RunTime:0.0003s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11' WHERE ( term_id=11 ) [ RunTime:0.0001s ]
+
+[ 2016-01-19T11:25:23+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001883s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0035s ]
+SQL: UPDATE `ax_terms` SET `parent`='0',`name`='产品中心',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='article' WHERE `term_id` = '11' [ RunTime:0.0003s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11' WHERE ( term_id=11 ) [ RunTime:0.0002s ]
+
+[ 2016-01-19T11:25:38+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002289s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0046s ]
+SQL: UPDATE `ax_terms` SET `parent`='11',`name`='产品分类1',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='Article' WHERE `term_id` = '16' [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=11 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11-16' WHERE ( term_id=16 ) [ RunTime:0.0002s ]
+
+[ 2016-01-19T11:25:39+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003243s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0038s ]
+SQL: UPDATE `ax_terms` SET `parent`='11',`name`='产品分类1',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='Article' WHERE `term_id` = '16' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11-16' WHERE ( term_id=16 ) [ RunTime:0.0002s ]
+
+[ 2016-01-19T11:25:51+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003542s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0029s ]
+SQL: UPDATE `ax_terms` SET `parent`='11',`name`='产品分类2',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='Article' WHERE `term_id` = '17' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11-17' WHERE ( term_id=17 ) [ RunTime:0.0002s ]
+
+[ 2016-01-19T11:26:06+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001891s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0046s ]
+SQL: UPDATE `ax_terms` SET `parent`='11',`name`='产品分类3',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='Article' WHERE `term_id` = '18' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11-18' WHERE ( term_id=18 ) [ RunTime:0.0001s ]
+
+[ 2016-01-19T11:26:07+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002796s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0037s ]
+SQL: UPDATE `ax_terms` SET `parent`='11',`name`='产品分类3',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='Article' WHERE `term_id` = '18' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11-18' WHERE ( term_id=18 ) [ RunTime:0.0001s ]
+
+[ 2016-01-19T11:29:34+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002698s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0053s ]
+SQL: INSERT INTO `ax_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-01-19 11:28:21','1','0','0','产品分类1-测试1','产品分类1-测试1','产品分类1-测试1','产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试','<p>产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试产品分类1-测试<img title=\"product_1.png\" alt=\"product_1.png\" src=\"http://www.hkweng.com/data/upload/ueditor/20160119/569dad9ba61c5.png\"/></p>','2016-01-19 11:29:34','1','{\"thumb\":\"\"}') [ RunTime:0.0003s ]
+SQL: INSERT INTO `ax_term_relationships` (`term_id`,`object_id`) VALUES ('16','18') [ RunTime:0.0002s ]
+
+[ 2016-01-19T11:30:19+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002597s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0038s ]
+SQL: INSERT INTO `ax_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-01-19 11:29:35','1','0','0','产品分类1-测试2','产品分类1-测试2','产品分类1-测试2','产品分类1-测试2产品分类1-测试2产品分类1-测试2产品分类1-测试2产品分类1-测试2产品分类1-测试2产品分类1-测试2产品分类1-测试2产品分类1-测试2产品分类1-测试2产品分类1-测试2产品分类1-测试2产品分类1-测试2产品分类1-测试2产品分类1-测试2产品分类1-测试2产品分类1-测试2','<p>产品分类1-测试2<img title=\"product_2.png\" alt=\"product_2.png\" src=\"http://www.hkweng.com/data/upload/ueditor/20160119/569dadba0c553.png\"/></p>','2016-01-19 11:30:19','1','{\"thumb\":\"569dadc5e1b71.png\"}') [ RunTime:0.0003s ]
+SQL: INSERT INTO `ax_term_relationships` (`term_id`,`object_id`) VALUES ('16','19') [ RunTime:0.0001s ]
+
+[ 2016-01-19T11:31:05+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001417s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004556s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0029s ]
+SQL: INSERT INTO `ax_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-01-19 11:30:20','1','0','0','产品分类1-测试3','产品分类1-测试3','产品分类1-测试3','产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3','<p>产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3产品分类1-测试3<img title=\"product_3.png\" alt=\"product_3.png\" src=\"http://www.hkweng.com/data/upload/ueditor/20160119/569dade94a253.png\"/></p>','2016-01-19 11:31:05','1','{\"thumb\":\"569dadf5cb51f.png\"}') [ RunTime:0.0003s ]
+SQL: INSERT INTO `ax_term_relationships` (`term_id`,`object_id`) VALUES ('16','20') [ RunTime:0.0002s ]
+
+[ 2016-01-19T11:32:12+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002059s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0027s ]
+
+[ 2016-01-19T11:32:22+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003026s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0038s ]
+SQL: INSERT INTO `ax_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-01-19 11:31:06','1','0','0','产品分类1-测试4','产品分类1-测试4','产品分类1-测试4','产品分类1-测试4产品分类1-测试4产品分类1-测试4','<p>产品分类1-测试4产品分类1-测试4产品分类1-测试4产品分类1-测试4产品分类1-测试4产品分类1-测试4产品分类1-测试4产品分类1-测试4产品分类1-测试4产品分类1-测试4产品分类1-测试4产品分类1-测试4<img title=\"product_1.png\" alt=\"product_1.png\" src=\"http://www.hkweng.com/data/upload/ueditor/20160119/569dae2672d65.png\"/></p>','2016-01-19 11:32:22','1','{\"thumb\":\"569dae336ac7e.png\"}') [ RunTime:0.0003s ]
+SQL: INSERT INTO `ax_term_relationships` (`term_id`,`object_id`) VALUES ('16','21') [ RunTime:0.0002s ]
+
+[ 2016-01-19T11:33:02+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003058s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0028s ]
+SQL: INSERT INTO `ax_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-01-19 11:32:24','1','0','0','产品分类1-测试5','产品分类1-测试5','产品分类1-测试5产品分类1-测试5','产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5','<p>产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5产品分类1-测试5<img title=\"product_2.png\" alt=\"product_2.png\" src=\"http://www.hkweng.com/data/upload/ueditor/20160119/569dae6306692.png\"/></p>','2016-01-19 11:33:02','1','{\"thumb\":\"569dae6b19020.png\"}') [ RunTime:0.0006s ]
+SQL: INSERT INTO `ax_term_relationships` (`term_id`,`object_id`) VALUES ('16','22') [ RunTime:0.0002s ]
+
+[ 2016-01-19T11:33:39+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003818s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0048s ]
+SQL: INSERT INTO `ax_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-01-19 11:33:04','1','0','0','产品分类1-测试6','产品分类1-测试6产品分类1-测试6产品分类1-测试6','产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6','产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6','<p>产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6产品分类1-测试6<img title=\"product_3.png\" alt=\"product_3.png\" src=\"http://www.hkweng.com/data/upload/ueditor/20160119/569dae8953fca.png\"/></p>','2016-01-19 11:33:39','1','{\"thumb\":\"569dae9093bd9.png\"}') [ RunTime:0.0003s ]
+SQL: INSERT INTO `ax_term_relationships` (`term_id`,`object_id`) VALUES ('16','23') [ RunTime:0.0002s ]
+
+[ 2016-01-19T11:34:20+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002451s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0039s ]
+SQL: INSERT INTO `ax_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-01-19 11:33:40','1','0','0','产品分类2-测试1','产品分类2-测试1','产品分类2-测试1','产品分类2-测试1产品分类2-测试1产品分类2-测试1产品分类2-测试1产品分类2-测试1','<p><img title=\"product_1.png\" alt=\"product_1.png\" src=\"http://www.hkweng.com/data/upload/ueditor/20160119/569daeb0876f0.png\"/>产品分类2-测试1产品分类2-测试1产品分类2-测试1产品分类2-测试1产品分类2-测试1产品分类2-测试1产品分类2-测试1产品分类2-测试1产品分类2-测试1产品分类2-测试1产品分类2-测试1产品分类2-测试1产品分类2-测试1</p>','2016-01-19 11:34:20','1','{\"thumb\":\"569daeb9c5818.png\"}') [ RunTime:0.0004s ]
+SQL: INSERT INTO `ax_term_relationships` (`term_id`,`object_id`) VALUES ('17','24') [ RunTime:0.0002s ]
+
+[ 2016-01-19T11:35:00+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001065s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003250s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0026s ]
+SQL: INSERT INTO `ax_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-01-19 11:34:22','1','0','0','产品分类2-测试2','产品分类2-测试2','产品分类2-测试2','产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2','<p>产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2产品分类2-测试2<img title=\"product_2.png\" alt=\"product_2.png\" src=\"http://www.hkweng.com/data/upload/ueditor/20160119/569daed98731b.png\"/></p>','2016-01-19 11:35:00','1','{\"thumb\":\"569daee121646.png\"}') [ RunTime:0.0003s ]
+SQL: INSERT INTO `ax_term_relationships` (`term_id`,`object_id`) VALUES ('17','25') [ RunTime:0.0001s ]
+
+[ 2016-01-19T11:35:38+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002282s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0035s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0034s ]
+SQL: INSERT INTO `ax_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-01-19 11:35:02','1','0','0','产品分类2-测试3','产品分类2-测试3','产品分类2-测试3','产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3','<p>产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3产品分类2-测试3<img title=\"product_3.png\" alt=\"product_3.png\" src=\"http://www.hkweng.com/data/upload/ueditor/20160119/569daf0003fb9.png\"/></p>','2016-01-19 11:35:38','1','{\"thumb\":\"569daf078e0a9.png\"}') [ RunTime:0.0003s ]
+SQL: INSERT INTO `ax_term_relationships` (`term_id`,`object_id`) VALUES ('17','26') [ RunTime:0.0002s ]
+
+[ 2016-01-19T11:36:21+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001866s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0034s ]
+SQL: INSERT INTO `ax_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-01-19 11:35:39','1','0','0','产品分类2-测试4','产品分类2-测试4','产品分类2-测试4','产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4','<p><img title=\"product_3.png\" alt=\"product_3.png\" src=\"http://www.hkweng.com/data/upload/ueditor/20160119/569daf22bc216.png\"/>产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4产品分类2-测试4</p>','2016-01-19 11:36:21','1','{\"thumb\":\"569daf3236f07.png\"}') [ RunTime:0.0003s ]
+SQL: INSERT INTO `ax_term_relationships` (`term_id`,`object_id`) VALUES ('17','27') [ RunTime:0.0002s ]
+
+[ 2016-01-19T11:36:59+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004263s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0043s ]
+SQL: INSERT INTO `ax_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-01-19 11:36:22','1','0','0','产品分类3-测试1','产品分类3-测试1','产品分类3-测试1','产品分类3-测试1产品分类3-测试1产品分类3-测试1产品分类3-测试1产品分类3-测试1产品分类3-测试1','<p>产品分类3-测试1产品分类3-测试1产品分类3-测试1产品分类3-测试1产品分类3-测试1产品分类3-测试1产品分类3-测试1产品分类3-测试1产品分类3-测试1产品分类3-测试1产品分类3-测试1产品分类3-测试1产品分类3-测试1</p>','2016-01-19 11:36:59','1','{\"thumb\":\"569daf57735fa.png\"}') [ RunTime:0.0003s ]
+SQL: INSERT INTO `ax_term_relationships` (`term_id`,`object_id`) VALUES ('18','28') [ RunTime:0.0002s ]
+
+[ 2016-01-19T11:37:29+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002083s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0028s ]
+SQL: INSERT INTO `ax_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-01-19 11:37:00','1','0','0','产品分类3-测试2','产品分类3-测试2','产品分类3-测试2','产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2','<p>产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2产品分类3-测试2<img title=\"product_2.png\" alt=\"product_2.png\" src=\"http://www.hkweng.com/data/upload/ueditor/20160119/569daf777749f.png\"/></p>','2016-01-19 11:37:29','1','{\"thumb\":\"569daf70079ca.png\"}') [ RunTime:0.0003s ]
+SQL: INSERT INTO `ax_term_relationships` (`term_id`,`object_id`) VALUES ('18','29') [ RunTime:0.0001s ]
+
+[ 2016-01-19T11:38:02+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001899s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0026s ]
+SQL: INSERT INTO `ax_posts` (`post_modified`,`post_status`,`istop`,`recommended`,`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2016-01-19 11:37:30','1','0','0','产品分类3-测试3','产品分类3-测试3','产品分类3-测试3','产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3','<p>产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3<img title=\"product_3.png\" alt=\"product_3.png\" src=\"http://www.hkweng.com/data/upload/ueditor/20160119/569daf8f972bc.png\"/></p>','2016-01-19 11:38:02','1','{\"thumb\":\"569daf972b0c7.png\"}') [ RunTime:0.0005s ]
+SQL: INSERT INTO `ax_term_relationships` (`term_id`,`object_id`) VALUES ('18','30') [ RunTime:0.0002s ]
+
+[ 2016-01-19T11:39:20+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003099s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0027s ]
+SQL: UPDATE `ax_terms` SET `parent`='0',`name`='产品中心',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='article' WHERE `term_id` = '11' [ RunTime:0.0002s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11' WHERE ( term_id=11 ) [ RunTime:0.0001s ]
+
+[ 2016-01-19T11:39:43+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003397s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0030s ]
+SQL: UPDATE `ax_terms` SET `parent`='11',`name`='产品分类1',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='Article' WHERE `term_id` = '16' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11-16' WHERE ( term_id=16 ) [ RunTime:0.0001s ]
+
+[ 2016-01-19T11:39:51+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002509s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0027s ]
+SQL: UPDATE `ax_terms` SET `parent`='11',`name`='产品分类2',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='Article' WHERE `term_id` = '17' [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=11 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11-17' WHERE ( term_id=17 ) [ RunTime:0.0004s ]
+
+[ 2016-01-19T11:40:04+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002513s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0032s ]
+SQL: UPDATE `ax_terms` SET `parent`='11',`name`='产品分类3',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='Article' WHERE `term_id` = '18' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11-18' WHERE ( term_id=18 ) [ RunTime:0.0001s ]
+
+[ 2016-01-19T13:39:45+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001779s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0026s ]
+SQL: UPDATE `ax_terms` SET `parent`='0',`name`='产品中心',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='Article' WHERE `term_id` = '11' [ RunTime:0.0003s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11' WHERE ( term_id=11 ) [ RunTime:0.0001s ]
+
+[ 2016-01-19T13:39:52+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003626s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0028s ]
+SQL: UPDATE `ax_terms` SET `parent`='0',`name`='养生学堂',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Health_School',`one_tpl`='Article' WHERE `term_id` = '10' [ RunTime:0.0003s ]
+SQL: UPDATE `ax_terms` SET `path`='0-10' WHERE ( term_id=10 ) [ RunTime:0.0002s ]
+
+[ 2016-01-19T13:40:03+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002502s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0026s ]
+SQL: UPDATE `ax_terms` SET `parent`='0',`name`='产品中心',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='Article' WHERE `term_id` = '11' [ RunTime:0.0002s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11' WHERE ( term_id=11 ) [ RunTime:0.0001s ]
+
+[ 2016-01-19T13:40:09+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001255s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004357s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0030s ]
+SQL: UPDATE `ax_terms` SET `parent`='11',`name`='产品分类1',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='Article' WHERE `term_id` = '16' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11-16' WHERE ( term_id=16 ) [ RunTime:0.0002s ]
+
+[ 2016-01-19T13:40:15+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003260s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0038s ]
+SQL: UPDATE `ax_terms` SET `parent`='11',`name`='产品分类2',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='Article' WHERE `term_id` = '17' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=11 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11-17' WHERE ( term_id=17 ) [ RunTime:0.0002s ]
+
+[ 2016-01-19T13:40:27+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002451s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0036s ]
+SQL: UPDATE `ax_terms` SET `parent`='11',`name`='产品分类3',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='Article' WHERE `term_id` = '18' [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=11 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11-18' WHERE ( term_id=18 ) [ RunTime:0.0002s ]
+
+[ 2016-01-19T13:40:28+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003403s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0027s ]
+SQL: UPDATE `ax_terms` SET `parent`='11',`name`='产品分类3',`description`='',`taxonomy`='article',`seo_title`='',`seo_keywords`='',`seo_description`='',`list_tpl`='Product_Center2',`one_tpl`='Article' WHERE `term_id` = '18' [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ax_terms` SET `path`='0-11-18' WHERE ( term_id=18 ) [ RunTime:0.0001s ]
+
+[ 2016-01-19T15:30:09+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002044s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0027s ]
+SQL: DELETE FROM `ax_term_relationships` WHERE `object_id` = 30 AND `term_id` NOT IN ('18') [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ax_term_relationships` WHERE `object_id` = 30 AND `term_id` = '18' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ax_term_relationships` SET `status`='1' WHERE `object_id` = 30 AND `term_id` = '18' [ RunTime:0.0002s ]
+SQL: UPDATE `ax_posts` SET `post_modified`='2016-01-19 11:37:30',`post_status`='1',`istop`='0',`recommended`='0',`post_title`='产品分类3-测试3',`post_keywords`='产品分类3-测试3',`post_source`='产品分类3-测试3',`post_excerpt`='产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3',`post_content`='<p>产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3</p>',`smeta`='{\"thumb\":\"569daf972b0c7.png\"}' WHERE `id` = '30' [ RunTime:0.0003s ]
+
+[ 2016-01-19T15:30:29+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003418s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `ax_term_relationships` [ RunTime:0.0028s ]
+SQL: DELETE FROM `ax_term_relationships` WHERE `object_id` = 30 AND `term_id` NOT IN ('18') [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ax_term_relationships` WHERE `object_id` = 30 AND `term_id` = '18' LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `ax_term_relationships` SET `status`='1' WHERE `object_id` = 30 AND `term_id` = '18' [ RunTime:0.0002s ]
+SQL: UPDATE `ax_posts` SET `post_modified`='2016-01-19 11:37:30',`post_status`='1',`istop`='0',`recommended`='0',`post_title`='产品分类3-测试3',`post_keywords`='产品分类3-测试3',`post_source`='产品分类3-测试3',`post_excerpt`='产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3',`post_content`='<p>产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3产品分类3-测试3<img title=\"logo.png\" alt=\"logo.png\" src=\"http://www.hkweng.com/data/upload/ueditor/20160119/569de6138537b.png\"/></p>',`smeta`='{\"thumb\":\"569daf972b0c7.png\"}' WHERE `id` = '30' [ RunTime:0.0002s ]
+
+[ 2016-01-19T15:48:51+08:00 ] 127.0.0.1 /index.php?g=Portal&m=article&a=index&id=12
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'hkweng.ax_term_ralationships' doesn't exist
+
+[ 2016-01-19T15:49:31+08:00 ] 127.0.0.1 /index.php?g=Portal&m=article&a=index&id=12
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'parent' in 'field list'
+

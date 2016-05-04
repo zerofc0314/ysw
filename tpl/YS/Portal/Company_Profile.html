@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+                <link rel="stylesheet" href="__TMPL__Public/Css/base.css" type="text/css"/>
+                <link rel="stylesheet" href="__TMPL__Public/Css/Company_Profile.css" type="text/css"/>
+                <link rel="stylesheet" href="__TMPL__Public/Css/swiper.3.2.7.min.css">
+	</head>
+	<body>
+                
+            <tc_include file="Public:header" />
+            
+		<div class="conter">
+			
+		       <tc_include  file="Public:animation" />	
+                    
+			<!--联系我们-->
+			<div class="conter_nav">
+                            
+				<tc_include file="Public:contact" />
+                            
+				<!--公司简介-->
+				<div class="conter_right" style="scroll:auto;" >
+					<P><img src="__TMPL__Public/Images/Company_Profile-1.png"></p>
+                                        
+                                      <!--
+					<div class="conter_content">
+                                            
+                                            <p>
+						<span>江西宏开养生翁</span> 是以负离子养生瓮为主打产品的养生健康管理公司， 是一家致力于能量、太极能量源、生物、健康、自然、营养美容科研开发的健康管理有限公司；是中国正在崛起的科技型健康企业之星。 公司集产品研发、生产、销售策划于一体， 结合现代科技能量之丰富含量，植根五千年之传统经典，研发出独具匠心的养生神器——负离子养生瓮。不仅结实、耐用、经久不裂、有效释放及锁住巨大的能量且对于亚健康状态的改善有着十明显的作用；尤其对亚健康具有高效的调理改善作用，开辟了现代养生的崭新视野，必将为亚健康人群开辟一条新的途径，从而创造出传统与现代、文化与科学、中与西有机结合的仪器，标志着我国中医养生美容革命及蒸疗美容领域取得的高新科研成果。
+						</p>
+						<h4>
+                     		一、负离子养生瓮特征：
+                     		 1、养生缸中国（世界）美容界；
+                     		  2、特有岩宝石产生纯天然负离子； 
+                     		  3、特有岩宝石产生与人体频率相近似的远红外线；
+                     	</h4>
+						<h4>
+                     		二、养生缸优势：
+                     		 1、养生缸形成负压核磁共振作用；
+                     		 2、养生缸的特定“缸”型构造，使负离子不逃逸；高新区格林燚犒陶瓷厂耗费高成本，
+                     		 集合台湾和大陆专业人士，集体研发，将数量有限的活瓷纳宝石以纯手工打造方式制成养生瓮，
+                     		 并经过国家多个权威部门检验，申请国家专利证书，有双利标志的负离子养生瓮。 它的面世引起众多养生者的追捧，
+                     		 这也招致一批商家仿照生产出“有其型而无其质"，甚至对人体有害的产品，以低价抢占市场，坑害消费者，引来争议是非不断。
+                     		 因为涉及商业机密以及全国一些成熟经营店家的不同意公开，
+                     		 仅提供一些经同意授权可以公开同时体验的店家名册，欢迎就近实体考察，围观亲临体验。
+                     	</h4>
+						<h4>全国各地成熟运作实体考察店家名册：
+                     		请拨打预留内线，并留下您的地址和号码。
+                     		经公司内部审核后，将委派当地就近人员或将就近战略合作店家地址与您，
+                     		敬请前往围观亲临体验。</h4>
+                                       -->
+                                       
+                                     
+                                       <php>
+                                            $porfile=D('Posts')->field(array('post_content'))->where(array('id'=>5))->find();
+                                       </php>
+
+                                            {$porfile.post_content}
+                                       
+                                       
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--中间结束-->
+		
+                <tc_include file="Public:footer" />
+                
+                
+	</body>
+</html>

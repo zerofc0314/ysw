@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <admintpl file="Public/header" />
+    <title>增加模型</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <div>
+        <form action="" method="post" class="form form-horizontal" id="form-model-add">
+            <!--基本信息-->
+            <div class="panel panel-default">
+                <div class="panel-header">基本信息</div>
+                <div class="panel-body">
+                    <div class="row cl">
+                        <label class="form-label col-2"><span class="c-red">*</span>模型名称：</label>
+                        <div class="formControls col-5">
+                            <input type="text" class="input-text radius" value="" id="name" name="name" datatype="s" nullmsg="模型名称不能为空" >
+                        </div>
+                        <div class="Validform_checktip"></div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-2"><span class="c-red">*</span>模型表键名：</label>
+                        <div class="formControls col-5">
+                            <input type="text" class="input-text radius" value="" placeholder="" id="tablename" name="tablename" datatype="*6-16" errormsg='数据错误' nullmsg="不能为空">
+                        </div>
+                        <div class="Validform_checktip"></div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-2"><span class="c-red"></span>描述：</label>
+                        <div class="formControls col-5">
+                            <input type="text" class="input-text radius" value="" placeholder="" id="description" name="description" >
+                        </div>
+                        <div class="Validform_checktip"></div>
+                    </div>
+                </div>
+            </div>
+            <!--前端模板信息-->
+            <div class="panel panel-default">
+                <div class="panel-header">前端模板</div>
+                <div class="panel-body">
+                    <div class="row cl">
+                        <label class="form-label col-2"><span class="c-red"></span>可用风格：</label>
+                        <div class="formControls col-5">
+                            默认模板，暂不可选择
+                        </div>
+                        <div class="Validform_checktip"></div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-2"><span class="c-red"></span>内容页模板：</label>
+                        <div class="formControls col-5">
+                            <select name="category_template" class="select-box" datatype="*" nullmsg="请选择内容页模板！">
+                                <option class="select-option" value="">请选择</option>
+                                <foreach name="temp.arc" item="v">
+                                    <option class="select-option" value="{$v}" selected="">文章频道页({$v})</option>
+                                </foreach>
+                            </select>
+                        </div>
+                        <div class="Validform_checktip"></div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-2"><span class="c-red"></span>栏目首页模板：</label>
+                        <div class="formControls col-5">
+                            <select name="list_template" class="select-box" datatype="*" nullmsg="请选择栏目首页模板！">
+                                <option value="">请选择</option>
+                                <foreach name="temp.index" item="v">
+                                    <option class="select-option" value="{$v}" selected="">文章频道页({$v})</option>
+                                </foreach>
+                            </select>
+                        </div>
+                        <div class="Validform_checktip"></div>
+                    </div>
+                    <div class="row cl">
+                        <label class="form-label col-2"><span class="c-red"></span>栏目列表页模板：</label>
+                        <div class="formControls col-5">
+                            <select name="show_template" class="select-box" datatype="*" nullmsg="请选择栏目列表页模板！">
+                                <option value="">请选择</option>
+                                <foreach name="temp.list" item="v">
+                                    <option class="select-option" value="{$v}" selected="">文章频道页({$v})</option>
+                                </foreach>
+                            </select>
+                        </div>
+                        <div class="Validform_checktip"></div>
+                    </div>
+                </div>
+            </div>
+            <!--后台模板-->
+            <div class="panel panel-default">
+                <div class="panel-header">后端模板</div>
+                <div class="panel-body">
+                    <div class="row cl">
+                        <label class="form-label col-2"><span class="c-red"></span>栏目列表页模板：</label>
+                        <div class="formControls col-5">
+                            <select name="admin_list_template" class="select-box" datatype="*" nullmsg="请选择后台栏目列表页模板！">
+                                <option value="">请选择</option>
+                                <foreach name="temp.admin_list" item="v">
+                                    <option class="select-option" value="{$v}" selected="">文章频道页({$v})</option>
+                                </foreach>
+                            </select>
+                        </div>
+                        <div class="Validform_checktip"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel text-c row">
+                <input type="submit" value="提交" class="btn btn-primary radius"/>&nbsp;&nbsp;&nbsp;
+                <input type="button" value="关闭" id="closeThis" class="btn btn-secondary radius"/>
+            </div>
+        </form>
+    </div> 
+<admintpl file="Public/footer" />
+<script src="__TMPL__/Static/lib/Validform/5.3.2/Validform.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$("#form-model-add").Validform({
+    tiptype: 2
+});
+$('#closeThis').click(function () {
+    var index = parent.layer.getFrameIndex(window.name); //获取窗口索引
+    parent.layer.close(index);
+});
+</script>
+</body>
+</html>

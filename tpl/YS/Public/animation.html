@@ -1,0 +1,60 @@
+<!--
+
+<div class="conter_ban">
+				<img src="__TMPL__Public/Images/content_banner.png">
+			</div>
+
+-->
+
+
+<!--背景图-->
+
+<!--
+			<div class="conter_banner">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="__TMPL__Public/Images/banner1.png"></div>
+						<div class="swiper-slide"><img src="__TMPL__Public/Images/content_banner.png"></div>
+						<div class="swiper-slide"><img src="__TMPL__Public/Images/banner1.png"></div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-next">
+					</div>
+					<div class="swiper-button-prev">
+					</div>
+				</div>
+			</div>
+                        -->
+                        
+                        <div class="conter_ban">
+				<div class="swiper-container" id="swiper-container1">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="__TMPL__Public/Images/content_banner.png"></div>
+						<div class="swiper-slide"><img src="__TMPL__Public/Images/content_banner.png"></div>
+						<div class="swiper-slide"><img src="__TMPL__Public/Images/banner1.png"></div>
+					</div>
+					<!-- Add Pagination 圆点-->
+					<div class="swiper-pagination" id="swiper-pagination1"></div>
+					<!-- Add Arrows 箭头-->
+					<div class="swiper-button-next" id="swiper-button-next1">
+					</div>
+					<div class="swiper-button-prev" id="swiper-button-prev1">
+					</div>
+				</div>
+			</div>
+
+                        
+                        <script src="__TMPL__Public/Js/swiper.3.2.7.min.js"></script>
+
+		<script>
+			var swiper = new Swiper('#swiper-container1', {
+				pagination: '#swiper-pagination1',
+				nextButton: '#swiper-button-next1',
+				prevButton: '#swiper-button-prev1',
+				paginationClickable: true,
+				spaceBetween: 30,
+				centeredSlides: true,
+				autoplay: 2500,
+				autoplayDisableOnInteraction: false
+			});
+		</script>

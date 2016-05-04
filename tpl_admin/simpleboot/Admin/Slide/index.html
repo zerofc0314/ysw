@@ -1,0 +1,137 @@
+<admintpl file="header" />
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<script type="text/javascript" src="lib/PIE_IE678.js"></script>
+<![endif]-->
+<link href="__TMPL__/Static/css/H-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="__TMPL__/Static/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+<link href="__TMPL__/Static/css/style.css" rel="stylesheet" type="text/css" />
+<link href="__TMPL__/Static/lib/Hui-iconfont/1.0.1/iconfont.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<title>幻灯片管理</title>
+</head>
+<body>
+<div class="pd-20">
+     <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 幻灯片管理 <span class="c-gray en">&gt;</span> 幻灯片管理 <a class="btn btn-success radius r mr-20" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+	<div class="cl pd-5 bg-1 bk-gray"> <span class="l"> <a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"> 幻灯片管理</a> <a class="btn btn-primary radius" href="javascript:;" onclick="admin_role_add('添加幻灯片','{:U('slide/add')}','800')"><i class="Hui-iconfont">&#xe600;</i> 添加幻灯片</a> </span> <span class="r">共有数据：<strong>54</strong> 条</span> </div>
+        <form class="well form-search" method="post" id="cid_form">
+			<div class="search_type cc mb10">
+				<div class="mb10">
+					<select class="select_2" name="cid" style="width: 100px;" id="selected_cid">
+						<option value=''>全部</option>
+						<foreach name="categorys" item="vo">
+						<php>$cid_select=$vo['cid']===$slide_cid?"selected":"";</php>
+						<option value="{$vo.cid}"{$cid_select}>{$vo.cat_name}</option>
+						</foreach>
+					</select>
+				</div>
+			</div>
+		</form>
+        
+        <form class="J_ajaxForm" action="" method="post">
+			<div class="table-actions">
+				<button class="btn btn-primary btn-small J_ajax_submit_btn" type="submit" data-action="{:u('slide/listorders')}">排序</button>
+				<button class="btn btn-primary btn-small J_ajax_submit_btn" type="submit" data-action="{:u('slide/toggle',array('display'=>1))}" data-subcheck="true">显示</button>
+				<button class="btn btn-primary btn-small J_ajax_submit_btn" type="submit" data-action="{:u('slide/toggle',array('hide'=>1))}" data-subcheck="true">隐藏</button>
+				<button class="btn btn-primary btn-small J_ajax_submit_btn" type="submit" data-action="{:U('slide/delete')}" data-subcheck="true">删除</button>
+			</div>
+			<php> $status=array("1"=>"显示","0"=>"隐藏"); </php>
+			<table class="table table-hover table-bordered table-list">
+				<thead>
+					<tr>
+						<th width="15"><label><input type="checkbox" class="J_check_all" data-direction="x" data-checklist="J_check_x"></label></th>
+						<th width="50">排序</th>
+						<th width="50">ID</th>
+						<th width="200">标题</th>
+						<th width="200">描述</th>
+						<th width="100">链接</th>
+						<th width="50">图片</th>
+						<th width="50">状态</th>
+						<th width="80">操作</th>
+					</tr>
+				</thead>
+				<foreach name="slides" item="vo">
+				<tr>
+					<td><input type="checkbox" class="J_check" data-yid="J_check_y" data-xid="J_check_x" name="ids[]" value="{$vo.slide_id}"></td>
+					<td><input name='listorders[{$vo.slide_id}]' class="input input-order mr5" type='text' size='3' value='{$vo.listorder}'></td>
+					<td>{$vo.slide_id}</td>
+					<td>{$vo.slide_name}</td>
+					<td>{$slide_des = mb_substr($vo['slide_des'], 0, 48,'utf-8')}</td>
+					<td>{$vo.slide_url}</td>
+					<td>
+						<if condition="!empty($vo['slide_pic'])">
+							<a href="{:sp_get_asset_upload_path($vo['slide_pic'])}" target="_blank">查看</a>
+						</if>
+					</td>
+					<td>{$status[$vo['slide_status']]}</td>
+					<td>
+						<a href="javascript:;" onclick="admin_role_add('修改','{:U('slide/edit',array('id'=>$vo['slide_id']))}','800')">修改</a>
+						<a href="javascript:;" onclick="admin_role_add('删除','{:U('slide/delete',array('id'=>$vo['slide_id']))}','800')">删除</a>
+						<if condition="empty($vo['slide_status']) eq 1">
+							<!--<a href="{:U('slide/cancelban',array('id'=>$vo['slide_id']))}" class="J_ajax_dialog_btn" data-msg="确定显示此幻灯片吗？">--><a href="javascript:;" onclick="admin_role_add('显示','{:U('slide/cancelban',array('id'=>$vo['slide_id']))}','800')">显示</a>
+						<else /> 
+							<!--<a href="{:U('slide/ban',array('id'=>$vo['slide_id']))}" class="J_ajax_dialog_btn" data-msg="确定隐藏此幻灯片吗？">--><a href="javascript:;" onclick="admin_role_add('隐藏','{:U('slide/ban',array('id'=>$vo['slide_id']))}','800')">隐藏</a>
+						</if>
+					</td>
+				</tr>
+				</foreach>
+				<tfoot>
+					<tr>
+						<th width="15"><label><input type="checkbox" class="J_check_all" data-direction="x" data-checklist="J_check_x"></label></th>
+						<th width="50">排序</th>
+						<th width="50">ID</th>
+						<th width="200">标题</th>
+						<th width="200">描述</th>
+						<th width="100">链接</th>
+						<th width="50">图片</th>
+						<th width="50">状态</th>
+						<th width="80">操作</th>
+					</tr>
+				</tfoot>
+			</table>
+			<div class="table-actions">
+				<button class="btn btn-primary btn-small J_ajax_submit_btn" type="submit" data-action="{:u('slide/listorders')}">排序</button>
+				<button class="btn btn-primary btn-small J_ajax_submit_btn" type="submit" data-action="{:u('slide/toggle',array('display'=>1))}" data-subcheck="true">显示</button>
+				<button class="btn btn-primary btn-small J_ajax_submit_btn" type="submit" data-action="{:u('slide/toggle',array('hide'=>1))}" data-subcheck="true">隐藏</button>
+				<button class="btn btn-primary btn-small J_ajax_submit_btn" type="submit" data-action="{:U('slide/delete')}" data-subcheck="true">删除</button>
+			</div>
+		</form>
+</div>
+<script type="text/javascript" src="__TMPL__/Static/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="__TMPL__/Static/lib/layer/1.9.3/layer.js"></script> 
+<script type="text/javascript" src="__TMPL__/Static/lib/My97DatePicker/WdatePicker.js"></script> 
+<script type="text/javascript" src="__TMPL__/Static/js/H-ui.js"></script> 
+<script type="text/javascript" src="__TMPL__/Static/js/H-ui.admin.js"></script> 
+<script type="text/javascript">
+/*管理员-角色-添加*/
+function admin_role_add(title,url,w,h){
+	layer_show(title,url,w,h);
+}
+/*管理员-角色-编辑*/
+function admin_role_edit(title,url,id,w,h){
+	layer_show(title,url,w,h);
+}
+/*管理员-角色-删除*/
+function admin_role_del(obj,id){
+	layer.confirm('角色删除须谨慎，确认要删除吗？',function(index){
+		//此处请求后台程序，下方是成功后的前台处理……
+		
+		
+		$(obj).parents("tr").remove();
+		layer.msg('已删除!',{icon:1,time:1000});
+	});
+}
+</script>
+</body>
+</html>

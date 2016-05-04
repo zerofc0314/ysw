@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{$post_title} {$site_name}</title>
+        <meta name="keywords" content="{$post_keywords}" />
+        <meta name="description" content="{$post_excerpt}">
+        <meta name="msapplication-tap-highlight" content="yes" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+        <link rel="stylesheet" href="__TMPL__Static/css/custom.css">
+        <script type="text/javascript">
+
+            if (navigator.userAgent.indexOf("compatible") > -1 && navigator.userAgent.indexOf("MSIE") > -1) {
+                document.write("<script src=\"__TMPL__Static/js/jquery-1.9.1.min.js\"><\/script>");
+                document.write("<script src=\"__TMPL__Static/js/html5.js\"><\/script>");
+            } else {
+                document.write("<script src=\"__TMPL__Static/js/jquery-2.1.0.min.js\"><\/script>");
+            }
+            ;
+        </script>
+        <script src="__TMPL__Static/js/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body class="intro-fullscreen fixed-footer yo-anim-enabled">
+
+    <tc_include file="Public:main-nav" />
+    <tc_include file="Public:mobile-nav" />
+
+    <div class="section-intro section-intro-parallax contact-fullscreen mobile-height" data-opacity-start="30" data-opacity-end="100">
+        <div class="bg-section map" id="map" style="background-image: url('{:sp_get_asset_upload_path($smeta['thumb'])}')"></div>
+        <div class="mapMarkerColor"></div>
+        <div class="container-fluid pre-content hidden-xs">
+            <div class="row">
+                <div class="col-xs-12 col-md-8 col-md-offset-2">
+                    <h1 class="yo-anim yo-anim-fade" data-animation-delay="100">很高兴我们能帮助您</h1>
+                    <p class="yo-anim yo-anim-fade" data-animation-delay="500">{$post_content}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a class="arrow1 arrow-section hidden-xs" href="#">
+            <i class="fa fa-angle-down"></i>
+        </a>
+        <a class="arrow2 arrow-section hidden-xs" href="#" style="">
+            <i class="fa fa-angle-up"></i>
+        </a>
+    </div>
+
+    <div class="section-space"></div>
+
+    <section id="contact" class="section-scroll main-section">
+        <header class="section-header">
+            <h2>联系我们</h2>
+        </header> 
+        <div class="contact-content container section-padding">
+            <div class="row">
+                <div class="col-xs-12 col-md-5 v-card">
+                    <h3 fa fa-send-o>信息</h3>
+                    <p>非常感谢您关注我们的产品，如果您有任何疑问可以拨打本公司电话或留言给我们，我们将竭诚为您服务。</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h3>地址</h3>
+                            <address>
+                               江西省南昌市高新开发区火炬大街807号泰豪商务大厦B座201室
+                            </address>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>联系方式</h3>
+                            <p>
+                                <a href="#" class="contact-email">service@jxhknet.cn</a><br/>
+                                <a href="tel:4006665418">+86 4006665418</a><br/>
+                                <a href="tel:079187368599">+86 0791 87368599</a><br/>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-7">
+                    <h3>留言信息</h3>
+                    <form class="row" role="form" name="contact-form" id="contact-form" action="#" method="POST">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="name" class="form-control contact-form " id="contact-name" placeholder="姓名" name="contact[name]">
+                            </div>
+                            <div class="form-group">
+                                <input class="contact-form form-control " type="text" placeholder="邮箱" name="contact[email]" id="contact-email">
+                            </div>
+                            <div class="form-group">
+                                <input class="contact-form form-control " type="text" placeholder="标题" name="contact[subject]" id="contact-subject">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group message">
+                                <textarea class="form-control input-row-3 contact-form " rows="6" placeholder="内容" name="contact[message]" id="contact-message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group text-right button-submit btn-submit">
+                                <button type="submit" class="btn btn-dark button-send">发送给我们</button>
+                                <div class="message-success alert-success alert hidden"><i class="fa fa-check"></i></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-spacer"></div>
+     <tc_include file="Public:page-footer" />
+    <tc_include file="Public:footer" />
+</body>
+</html>
+
+

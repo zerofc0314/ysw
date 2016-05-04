@@ -1,0 +1,113 @@
+<nav id="main-navbar" class="hidden-xs hidden-sm">
+    <div class="nav hidden-xs">
+        <div class="main-reorder pull-right">
+            <a href="#">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="logo pull-left">
+            <a href="/">
+                <figure>
+                    <img src="__TMPL__Static/img/logo1.png" class="light-logo" alt="{$site_name}"/>
+                    <img src="__TMPL__Static/img/logo.png" class="dark-logo" alt="{$site_name}"/>
+                </figure>
+            </a>
+        </div>
+        <div class="main-nav">
+            <ul class="pull-right">
+
+                <?php
+                $main_nav = _sp_get_menu_datas("0",0);
+                ?>
+                <foreach name="main_nav" item="vo">
+                    <?php 
+                    $sub_menu = _sp_get_menu_datas("0",$vo['id']);
+                    ?>
+                    <li>
+                        <a href="{$vo.href}" class="<if condition='$vo.listorder eq 0'>active active2 active3 active4 active5</if>">{$vo.label}</a>
+                    <if condition='!empty($sub_menu)'>
+                        <div class="subnav">
+                            <ul class="subnav-wrapper">
+                                <foreach name="sub_menu" item="sub">
+                                    <li>
+                                        <a href="{$sub.href}" class="">{$sub.label}</a>
+                                    </li>
+                                </foreach> 
+                            </ul>
+                        </div>
+                    </if>
+                    </li>
+                </foreach>
+                <?php /**
+                <!--
+                <li>
+                <a href="/" class="active active2 active3 active4 active5">首页</a>					
+                </li>
+                <li>
+                <a href="shop.html" class="">品牌故事</a>
+                </li>
+                <li>
+                <a href="blog.html" class="">养生学堂</a>
+                <div class="subnav">
+                <ul class="subnav-wrapper">
+                <li>
+                <a href="blog.html" class="">blog</a>
+                </li>
+                <li>
+                <a href="post.html" class="">post 1</a>
+                </li>
+                <li>
+                <a href="post2.html" class="">post 2</a>
+                </li>
+                </ul>
+                </div>
+                </li>
+                <li>
+                <a href="menu.html" class="hover-subnav ">产品信息</a>
+                <div class="subnav image-subnav">
+                <ul class="subnav-wrapper">			
+                <li>
+                <a href="menu.html#starters">养生产品1</a>
+                <div>
+                <a href="menu.html#starters" class="menu-img" style="background-image: url('')"></a>
+                </div>
+                </li>
+                <li>
+                <a href="menu.html#salads">养生产品2</a>
+                <div>							
+                <a href="menu.html#salads" class="menu-img" style="background-image: url('')"></a>
+                </div>
+
+                </li>
+                <li>
+                <a href="menu.html#salads">养生产品2</a>
+                <div>							
+                <a href="menu.html#salads" class="menu-img" style="background-image: url('')"></a>
+                </div>
+
+                </li>
+                <li>
+                <a href="menu.html#salads">养生产品2</a>
+                <div>							
+                <a href="menu.html#salads" class="menu-img" style="background-image: url('')"></a>
+                </div>
+
+                </li>
+                </ul>
+                </div>
+                </li>	
+                <li>
+                <a href="reservation.html" class="">关于我们</a>
+                </li>
+                <li>
+                <a href="contact.html" class="">联系我们</a>	
+                </li>
+                <li>
+                <a href="shop.html" class="">在线选购</a>
+                </li>	
+                -->
+                */?>
+            </ul>
+        </div>
+    </div>
+</nav>

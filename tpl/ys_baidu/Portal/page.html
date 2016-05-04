@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{$post_title} {$site_name}</title>
+        <meta name="keywords" content="{$post_keywords}" />
+	<meta name="description" content="{$post_excerpt}">
+        <meta name="msapplication-tap-highlight" content="yes" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+        <link rel="stylesheet" href="__TMPL__Static/css/custom.css">
+        <script type="text/javascript">
+
+            if (navigator.userAgent.indexOf("compatible") > -1 && navigator.userAgent.indexOf("MSIE") > -1) {
+                document.write("<script src=\"__TMPL__Static/js/jquery-1.9.1.min.js\"><\/script>");
+                document.write("<script src=\"__TMPL__Static/js/html5.js\"><\/script>");
+            } else {
+                document.write("<script src=\"__TMPL__Static/js/jquery-2.1.0.min.js\"><\/script>");
+            }
+            ;
+        </script>
+        <script src="__TMPL__Static/js/modernizr-2.6.2.min.js"></script>
+
+
+    </head>
+    <body class="intro-top fixed-footer yo-anim-enabled">
+        
+             <tc_include file="Public:main-nav" />
+            <tc_include file="Public:mobile-nav" />
+       
+        <div class="section-intro section-intro-parallax" data-opacity-start="30" data-opacity-end="100" >
+            <div class="bg-section " style="background-image: url('{:sp_get_asset_upload_path($smeta['thumb'])}')"></div>
+            <div class="pre-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                            <h1 class="yo-anim yo-anim-fade" data-animation-delay="100">{$post_title}</h1>
+                            <p class="yo-anim yo-anim-fade" data-animation-delay="500">{$post_excerpt}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-space"></div>
+        <section id="reservation" class="section-scroll main-section">
+            <div class="main-section">
+                <div class="reservation-content container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2 reservation-header">
+                            <p>{$post_content}</p>
+                        </div>				
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="footer-spacer"></div>
+    <tc_include file="Public:page-footer" />
+    <tc_include file="Public:footer" />
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <tc_include file="Public:seo" />
+        <link rel="stylesheet" href="__TMPL__Public/Css/Health_School.css" type="text/css"/>
+        <script src="__TMPL__Public/Js/jquery-1.4.4.min.js" /></script>
+        <link rel="stylesheet" href="__TMPL__Public/Css/swiper.3.2.7.min.css">
+    </head>
+    <body>
+
+    <tc_include file="Public:header" />
+
+    <div class="conter">
+        <!--背景图-->
+
+        <tc_include file="Public:animation" />
+
+        <div class="bigbox">	
+
+            <div class="conter_left">
+         
+                    
+                <!--产品分类-->
+
+                <div class="classify">
+                    <div class="classify_box">
+                        <span><img src="__TMPL__Public/Images/Campaign.png"></span>
+                        <span class="contact_more">
+                            <!--
+                            <a href="#">更多<img src="__TMPL__Public/Images/more.png">
+                            -->
+                                </span>
+                                </div>
+                                <div class="classify_nav">
+
+                                    <php>
+                                        $subNav=sp_get_child_terms(10);
+                                    </php>
+                                
+                                    <volist name="subNav" id="v">
+                                    <div>
+                                        <img src="__TMPL__Public/Images/icon1.png" />
+                                        <a href="{:leuu('Portal/list/index',array('id'=>$v['term_id']))}">{$v.name}</a>
+                                    </div>
+                                    </volist>
+                                    
+                                </div>
+                                </div>
+                                <!--二维码-->
+                                <div class="Scan">
+                                    <div class="Scan_box">
+                                        <img src="__TMPL__Public/Images/Two_dimension_code.png">
+                                        <div class="Scan_f"><a>扫一扫进入宏开养生瓮店铺
+                                                <span class="Scan_span"><br />（有惊喜）</a></span></div>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="wire">
+                                    <img src="__TMPL__Public/Images/wire.png">
+                                </div>
+                                <!--养生学堂-->
+
+                                <php>
+                                    $data=$_SERVER['QUERY_STRING'];
+                                    $data_new=strrchr($data,"=");                                
+                                    $id=substr($data_new,1);//(string)
+                                    $lists=sp_sql_posts_paged_bycatid($id,"field:tid,post_title,post_date;limit:0,8;order:post_date desc;",8);
+                                </php>
+
+                                <div class="conter_right">
+                                    <p><img src="__TMPL__Public/Images/lately_Campaign.png"</p>
+                                    <div class="right_box">
+                                        <ol>
+                                            
+                                            <!--
+                                                <li><a href="#">&gt;&nbsp; 汗蒸虽好却有禁忌  </a><span> 【2015年10月29日】</span></li>
+                                                <li><a href="#">&gt;&nbsp;  汗蒸虽好却有禁忌  </a><span> 【2015年10月29日】</span></li>
+                                                <li><a href="#">&gt;&nbsp; 汗蒸虽好却有禁忌  </a><span> 【2015年10月29日】</span></li>
+                                                <li><a href="#">&gt;&nbsp; 汗蒸虽好却有禁忌  </a><span> 【2015年10月29日】</span></li>
+                                                <li class="ol_color"><a href="#">&gt;&nbsp; 汗蒸虽好却有禁忌  </a><span> 【2015年10月29日】</span></li>
+                                                <li><a href="#">&gt;&nbsp; 汗蒸虽好却有禁忌  </a><span> 【2015年10月29日】</span></li>
+                                                <li><a href="#">&gt;&nbsp; 汗蒸虽好却有禁忌  </a><span> 【2015年10月29日】</span></li>
+                                                <li><a href="#">&gt;&nbsp; 汗蒸虽好却有禁忌  </a><span> 【2015年10月29日】</span></li>
+                                                <li><a href="#">&gt;&nbsp; 汗蒸虽好却有禁忌  </a><span> 【2015年10月29日】</span></li>
+                                                <li><a href="#">&gt;&nbsp; 汗蒸虽好却有禁忌  </a><span> 【2015年10月29日】</span></li>
+                                                <li><a href="#">&gt;&nbsp; 汗蒸虽好却有禁忌  </a><span> 【2015年10月29日】</span></li>
+                                            -->
+                                           
+                                            <volist name="lists['posts']" id="vo">
+                                                <php>
+                                                    $smeta=json_decode($vo['smeta'], true);
+                                                </php>
+
+
+                                                <li><a href="{:leuu('Portal/article/index',array('id'=>$vo['tid']))}" >&gt;&nbsp; {$vo.post_title} </a><span> 【{$vo.post_date}】</span></li>
+
+                                            </volist>
+                                            
+                                            
+                                        </ol>
+	
+                                    </div>
+                                    
+                                    
+                                    <div  class="pagination" style="margin-top:30px;" >
+                                            <ul style="width:220px;margin-left:200px;">
+                                                {$lists['page']}
+                                            </ul>
+                                    </div>
+                                    
+                                   
+                                    <style type="text/css">
+                                        .pagination ul li:frist{margin-left:300px;}
+                                        .pagination ul li{height:100%;width:50px;float:left;}
+                                        
+                                        .right_box ol li a:hover{color:#1d30a0;}
+                                    </style>
+                                   
+
+                                </div>	
+                                </div>
+                                </div>
+
+                                <tc_include file="Public:footer" />	
+
+                                </body>
+                                </html>

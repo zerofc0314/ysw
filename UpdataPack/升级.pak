@@ -1,0 +1,28 @@
+作者：傅超
+
+时间：2015-11-2
+
+任务名称：后台登录版面设计
+
+ 
+
+涉及文件：
+
+1.tpl_admin/simpleboot/Admin/index.html
+
+
+  2.    tpl_admin/simpleboot/Admin/Public/login.html
+
+  3.    tpl_admin/simpleboot/Static/css/H-ui.login.css
+
+  4.    tpl_admin/simpleboot/Static/images/bgdomo-1.png
+
+  5.    tpl_admin/simpleboot/Static/images/logo.png
+
+  6.   tpl_admin/simpleboot/assets/images/logo.png
+
+ 
+
+升级：后台登录首页面
+
+增加文件 3,4,5,6

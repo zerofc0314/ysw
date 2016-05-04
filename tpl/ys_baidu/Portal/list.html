@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{$post_title} {$site_name}</title>
+        <meta name="keywords" content="{$post_keywords}" />
+        <meta name="description" content="{$post_excerpt}">
+        <meta name="msapplication-tap-highlight" content="yes" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+        <link rel="stylesheet" href="__TMPL__Static/css/custom.css">
+        <script type="text/javascript">
+
+            if (navigator.userAgent.indexOf("compatible") > -1 && navigator.userAgent.indexOf("MSIE") > -1) {
+                document.write("<script src=\"__TMPL__Static/js/jquery-1.9.1.min.js\"><\/script>");
+                document.write("<script src=\"__TMPL__Static/js/html5.js\"><\/script>");
+            } else {
+                document.write("<script src=\"__TMPL__Static/js/jquery-2.1.0.min.js\"><\/script>");
+            }
+            ;
+        </script>
+        <script src="__TMPL__Static/js/modernizr-2.6.2.min.js"></script>
+
+
+    </head>
+    <body class="intro-top fixed-footer scrollable yo-anim-enabled">
+    <tc_include file="Public:main-nav" />
+    <tc_include file="Public:mobile-nav" />
+
+    <div class="section-intro section-intro-parallax" data-opacity-start="30" data-opacity-end="100">
+        <div class="bg-section  menu-fullscreen"></div>
+
+    </div>
+    <div class="section-space"></div>
+    <section class="section-scroll main-section section-padding">
+        <div class="container">
+            <php>
+                $lists = sp_sql_posts_bycatid("cid:$cat_id;order:post_date DESC;",20);
+            </php>
+            <volist name="lists" id="vo">
+                <php>
+                    $smeta=json_decode($vo['smeta'], true);
+                </php>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4><a href="{:leuu('article/index',array('id'=>$vo['tid']))}">{$vo.post_title}</a></h4>
+                        <span class="dropcap"><if condition="!empty($smeta['thumb'])"><img  src="{:sp_get_asset_upload_path($smeta['thumb'])}" width="80" height="80" alt="{$vo.post_title}"></if></span>
+                            <div class="pull-left">
+                                    <div class="list-actions">
+                                        <a href="javascript:;" alt="阅读数量"><i class="fa fa-eye"></i><span>{$vo.post_hits}</span></a>
+                                        <a href="{:U('article/do_like',array('id'=>$vo['object_id']))}" class="J_count_btn" alt="点赞"><i class="fa fa-thumbs-up"></i><span class="count">{$vo.post_like}</span></a>
+                                        <a href="{:U('user/favorite/do_favorite',array('id'=>$vo['object_id']))}" class="J_favorite_btn" data-title="{$vo.post_title}" data-url="{:U('portal/article/index',array('id'=>$vo['tid']))}" data-key="{:sp_get_favorite_key('posts',$vo['object_id'])}">
+                                            <i class="fa fa-star-o"></i>
+                                        </a>
+                                        <div class="pull-left"><span class="meta">{$vo.post_date}</span></div>
+                                    </div>
+                            </div><br/>&nbsp;&nbsp;&nbsp;&nbsp;{$vo.post_excerpt|msubstr=0,256}<a class="btn btn-warning pull-right" href="{:leuu('article/index',array('id'=>$vo['tid']))}">查看更多</a>
+                    </div>
+                </div> 
+            </volist>
+        </div>
+    </section>
+    <div id="footer-spacer"></div>
+    <tc_include file="Public:page-footer" />
+    <tc_include file="Public:footer" />
+</body>
+</html>

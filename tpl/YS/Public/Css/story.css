@@ -1,0 +1,168 @@
+.conter {
+	width: 100%;
+	float: left;
+}
+
+.swiper-container {
+	width: 1000px;
+	height: 400px;
+}
+
+.swiper-slide {
+	text-align: center;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.conter_brand {
+	width: 1000px;
+	margin: 0px auto;
+	height: auto;
+	margin-top: 27px;
+}
+
+.conter_brand p {
+	text-align: center;
+}
+
+.brand {
+	margin-top: 40px;
+}
+
+.conter_product {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 42px;
+}
+
+.conter_product p {
+	text-align: center;
+}
+
+.conter_h {
+	width: 1000px;
+	margin: 0px auto;
+	height: auto;
+	margin-top: 50px;
+}
+
+.conter_h h1 {
+	color: black;
+	font-size: 30px;
+	margin-left: 228px;
+	font-family: "宋体";
+	line-height: bold;
+}
+
+.conter_h p {
+	font-family: "宋体";
+	font-size: 18px;
+	color: #151717;
+	width: 550px;
+	margin: 0px auto;
+	margin-top: 20px;
+}
+
+.conter_box {
+	width: 1000px;
+	margin: 0px auto;
+	margin-left: 105px;
+	margin-top: 34px;
+}
+
+.conter_box img {
+	margin-right: 40px;
+}
+
+.conter_production {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+.conter_production p {
+	text-align: center;
+}
+
+.production-box {
+	width: 1000px;
+	float: left;
+	margin-left: 100px;
+	margin-top: 45px;
+}
+
+.bigbox {
+	width: 237px;
+	height: auto;
+	float: left;
+	margin-left: 25px;
+	margin-bottom: 50px;
+}
+
+.float_box {
+	width: 237px;
+	height: auto;
+	float: left;
+	margin-left: 25px;
+	margin-top: 26px;
+}
+
+.float_box a {
+	font-size: 12px;
+	color: black;
+	font-weight: bold;
+}
+
+.bigbox span a {
+	font-size: 12px;
+	color: black;
+	font-weight: bold;
+}
+
+.bigbox .span_a {
+	margin-top: 25px;
+}
+
+.conter_CertificateNumber {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.CertificateNumber_box p {
+	text-align: center;
+}
+
+.CM_box {
+	margin-top: 50px;
+}
+
+.CM_box p {
+	text-align: center;
+}
+
+.C_bigbox {
+	margin-top: 48px;
+}
+
+.CM_top {
+	width: 1000px;
+	margin-top: 30px;
+	margin-left: 30px;
+	overflow: hidden;
+}
+
+.CM_top p {
+	float: left;
+	margin-left: 50px;
+}

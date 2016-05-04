@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<tc_include file="Public:seo" />
+		<link rel="stylesheet" href="__TMPL__Public/Css/Article.css" type="text/css" />
+		<link rel="stylesheet" href="__TMPL__Public/Css/swiper.3.2.7.min.css" type="text/css" />
+                
+                 <style type="text/css">
+                    .conter_ban{margin-top:44px;}
+                </style>
+                
+	</head>
+
+	<body>
+            
+
+        <tc_include file="Public:header" />
+            
+	<div class="conter">
+			
+            <tc_include file="Public:animation" />
+                       
+			<div class="bigbox">
+				<div class="conter_left">
+	               <!--产品分类-->
+					<div class="classify">
+						<div class="classify_box">
+							<span><img src="__TMPL__Public/Images/classify.png"></span>
+                                                        <!--
+							<span class="contact_more"><a href="#">更多<img src="__TMPL__Public/Images/more.png"></span>
+                                                        -->
+						</div>
+                                              
+                                   
+                                            
+						<div class="classify_nav">
+                                                    
+                                                    <!--
+							<div><img src="Static/Images/icon1.png" /><a href="#">负离子养生瓮</a></div>
+							<div><img src="Static/Images/icon2.png" /><a href="#">能量石精品组合套装</a></div>
+							<div><img src="Static/Images/icon1.png" /><a href="#">负离子汗蒸养生瓮</a></div>
+                                                    -->
+                                                    
+                                                    
+                                                    <php>
+                                                        $data=$_SERVER['QUERY_STRING'];
+                                                        $data_new=strrchr($data,"=");                                
+                                                        $id=substr($data_new,1);//(string)
+                                                        
+                                                        //获取文章分类所属的父级分类
+                                                        $pranentId=M('term_relationships')->field(array("term_id"))->where(array('tid'=>$id))->find();
+                                                        $grandPId=M('terms')->field(array("parent"))->where(array('term_id'=>$pranentId['term_id']))->find();
+                                                        $subNav=sp_get_child_terms($grandPId['parent']);
+                                                    </php>
+                                
+                                                    <volist name="subNav" id="v">
+                                                    <div>
+                                                        <img src="__TMPL__Public/Images/icon1.png" />
+                                                             <a href="{:leuu('Portal/list/index',array('id'=>$v['term_id']))}">{$v.name}</a>
+                                                    </div>
+                                                    </volist>
+                                                    
+						</div>
+					</div>
+					<!--联系人-->
+					<div class="conter_product">
+						<span><img src="__TMPL__Public/Images/contact.png"></span>
+                                                <!--
+						<span class="conter_s"><a href="">更多<img src="__TMPL__Public/Images/more.png"></a></span>
+                                                -->
+					</div>
+                                        
+					<div class="conter_box">
+						<p>联系人：戴小姐</p>
+						<p>电话：0791-87368599</p>
+						<p>Q Q ：2022406149</p>
+						<p><a href="http://www.jxhknet.com">网址：http://www.jxhknet.com</a></p>
+						<p>邮箱：407037781@qq.com</p>
+						<p>地址：南昌市高新技术开发区火炬大街807号泰豪
+							<br>大厦B座201室</p>
+					</div>
+				
+
+					<!--二维码-->
+					<div class="Scan">
+						<div class="Scan_box">
+							<img src="__TMPL__Public/Images/Two_dimension_code.png">
+							<div class="Scan_f">
+                                                            <a>扫一扫进入宏开养生瓮店铺
+                                                               <span class="Scan_span"><br />（有惊喜）</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="wire">
+					<img src="__TMPL__Public/Images/wire.png">
+				</div>
+				<!--养生学堂-->
+
+                                <php>
+                                    /*处理smeta*/
+                                    $smeta=json_decode($smeta,true);/*把smeta转化成数组*/
+                               </php>
+                                <!--
+                                     {$smeta.thumb}
+                                <img src="{:sp_get_asset_upload_path($smeta['thumb'])}"/>
+                                -->
+    
+				<div class="conter_right">
+					<div class="headline">
+						{$post_title}</div>
+					<div class="right_box">
+						<a>作者:{$post_author}</a>
+						<span><a>发布于：{$post_date}</a></span>
+					</div>
+					<div class="right_nav" style="overflow-y:auto;">
+                                                 {$post_content}
+					</div>
+				</div>
+			</div>
+		</div>
+
+	        <tc_include file="Public:footer" />
+                 
+	</body>
+
+</html>

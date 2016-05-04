@@ -1,0 +1,27 @@
+<div class="footer">
+			<div class="footer_box">
+                            
+                            <ul class="footer_nav" >
+                               
+                                <php>$links=sp_getlinks();</php>
+                                <foreach name="links" item="vo">
+                                    <li>
+                                        <a href="{$vo.link_url}" target="{$vo.link_target}">{$vo.link_name}</a>
+                                    </li>
+                                </foreach>
+                               
+                            </ul>
+                            
+                            </br>
+                            
+                            <h5 style="color:#868686;margin:0 38%;">{$site_copyright}</h5>
+                            
+			</div>
+          
+</div>
+
+    <style type="text/css">
+           .footer_nav li:first-child{margin-left:190px;border-left:1px solid #fffdfd;};
+    </style>
+              
+

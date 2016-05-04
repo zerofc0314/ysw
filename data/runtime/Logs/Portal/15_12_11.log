@@ -1,0 +1,165 @@
+[ 2015-12-11T11:10:53+08:00 ] 127.0.0.1 /
+ERR: 模板不存在:tpl/YS/Portal/index.html
+
+[ 2015-12-11T11:10:55+08:00 ] 127.0.0.1 /
+ERR: 模板不存在:tpl/YS/Portal/index.html
+
+[ 2015-12-11T11:12:52+08:00 ] 127.0.0.1 /css/comm.css
+ERR: 无法加载控制器:Css
+
+[ 2015-12-11T11:12:52+08:00 ] 127.0.0.1 /css/jquery.slider.css
+ERR: 无法加载控制器:Css
+
+[ 2015-12-11T11:12:52+08:00 ] 127.0.0.1 /css/jquery.SuperSlide.js
+ERR: 无法加载控制器:Css
+
+[ 2015-12-11T11:12:53+08:00 ] 127.0.0.1 /css/jquery-1.8.1.min.js
+ERR: 无法加载控制器:Css
+
+[ 2015-12-11T11:12:53+08:00 ] 127.0.0.1 /css/index.css
+ERR: 无法加载控制器:Css
+
+[ 2015-12-11T11:12:53+08:00 ] 127.0.0.1 /css/jquery.zoomImgRollover.js
+ERR: 无法加载控制器:Css
+
+[ 2015-12-11T11:12:53+08:00 ] 127.0.0.1 /css/jquery.slider.min.js
+ERR: 无法加载控制器:Css
+
+[ 2015-12-11T11:13:58+08:00 ] 127.0.0.1 /css/jquery.slider.css
+ERR: 无法加载控制器:Css
+
+[ 2015-12-11T11:13:58+08:00 ] 127.0.0.1 /css/jquery.slider.min.js
+ERR: 无法加载控制器:Css
+
+[ 2015-12-11T11:13:58+08:00 ] 127.0.0.1 /css/jquery-1.8.1.min.js
+ERR: 无法加载控制器:Css
+
+[ 2015-12-11T11:13:58+08:00 ] 127.0.0.1 /css/jquery.zoomImgRollover.js
+ERR: 无法加载控制器:Css
+
+[ 2015-12-11T11:13:58+08:00 ] 127.0.0.1 /css/index.css
+ERR: 无法加载控制器:Css
+
+[ 2015-12-11T11:13:58+08:00 ] 127.0.0.1 /css/jquery.SuperSlide.js
+ERR: 无法加载控制器:Css
+
+[ 2015-12-11T11:18:17+08:00 ] 127.0.0.1 /qyjj.html
+ERR: 无法加载控制器:Qyjj
+
+[ 2015-12-11T11:20:00+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0020s ]
+SQL: INSERT INTO `ax_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('0','新闻中心','','article','','','','list','article') [ RunTime:0.0010s ]
+SQL: UPDATE `ax_terms` SET `path`='0-3' WHERE ( term_id=3 ) [ RunTime:0.0000s ]
+
+[ 2015-12-11T11:20:17+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0020s ]
+SQL: INSERT INTO `ax_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('3','行业新闻','','article','','','','list','article') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ax_terms` SET `path`='0-3-4' WHERE ( term_id=4 ) [ RunTime:0.0000s ]
+
+[ 2015-12-11T11:20:35+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0020s ]
+SQL: INSERT INTO `ax_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('3','养生新闻','','article','','','','list','article') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ax_terms` SET `path`='0-3-5' WHERE ( term_id=5 ) [ RunTime:0.0000s ]
+
+[ 2015-12-11T11:20:50+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0020s ]
+SQL: INSERT INTO `ax_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('3','企业新闻','','article','','','','list','article') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ax_terms` WHERE ( term_id=3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ax_terms` SET `path`='0-3-6' WHERE ( term_id=6 ) [ RunTime:0.0000s ]
+
+[ 2015-12-11T11:21:54+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0020s ]
+SQL: INSERT INTO `ax_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('0','养生常识','','article','','','','list','article') [ RunTime:0.0010s ]
+SQL: UPDATE `ax_terms` SET `path`='0-7' WHERE ( term_id=7 ) [ RunTime:0.0000s ]
+
+[ 2015-12-11T11:22:26+08:00 ] 127.0.0.1 /index.php?g=&m=AdminTerm&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ax_terms` [ RunTime:0.0020s ]
+SQL: INSERT INTO `ax_terms` (`parent`,`name`,`description`,`taxonomy`,`seo_title`,`seo_keywords`,`seo_description`,`list_tpl`,`one_tpl`) VALUES ('0','养生瓮展示','养生瓮展示','picture','','','','list','article') [ RunTime:0.0000s ]
+SQL: UPDATE `ax_terms` SET `path`='0-8' WHERE ( term_id=8 ) [ RunTime:0.0000s ]
+
+[ 2015-12-11T11:23:25+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPage&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0020s ]
+SQL: INSERT INTO `ax_posts` (`post_type`,`post_modified`,`post_status`,`post_title`,`post_keywords`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2','2015-12-11 11:23:11','1','关于我们','关于我们','关于我们','<p>关于我们的内容</p>','2015-12-11 11:23:25','1','{\"thumb\":\"\",\"template\":\"page\"}') [ RunTime:0.0010s ]
+
+[ 2015-12-11T11:23:48+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPage&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0010s ]
+SQL: INSERT INTO `ax_posts` (`post_type`,`post_modified`,`post_status`,`post_title`,`post_keywords`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2','2015-12-11 11:23:27','1','服务内容','服务内容关键词','服务内容摘要','<p>服务内容内容</p>','2015-12-11 11:23:48','1','{\"thumb\":\"\",\"template\":\"page\"}') [ RunTime:0.0010s ]
+
+[ 2015-12-11T11:24:10+08:00 ] 127.0.0.1 /index.php?g=&m=AdminPage&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ax_posts` [ RunTime:0.0020s ]
+SQL: INSERT INTO `ax_posts` (`post_type`,`post_modified`,`post_status`,`post_title`,`post_keywords`,`post_excerpt`,`post_content`,`post_date`,`post_author`,`smeta`) VALUES ('2','2015-12-11 11:23:49','1','联系我们','联系我们关键词','联系我们摘要','<p>联系我们内容</p>','2015-12-11 11:24:10','1','{\"thumb\":\"\",\"template\":\"page\"}') [ RunTime:0.0000s ]
+
+[ 2015-12-11T11:24:36+08:00 ] 127.0.0.1 /index.php?g=portal&m=page&a=index&id=1
+ERR: 模板不存在:tpl/YS/Portal/404.html
+
+[ 2015-12-11T11:27:06+08:00 ] 127.0.0.1 /index.php?g=portal&m=page&a=index&id=1
+ERR: 模板不存在:tpl/YS/Portal/404.html
+
+[ 2015-12-11T11:27:08+08:00 ] 127.0.0.1 /index.php?g=portal&m=page&a=index&id=1
+ERR: 模板不存在:tpl/YS/Portal/404.html
+
+[ 2015-12-11T11:27:09+08:00 ] 127.0.0.1 /index.php?g=portal&m=page&a=index&id=1
+ERR: 模板不存在:tpl/YS/Portal/404.html
+
+[ 2015-12-11T11:27:09+08:00 ] 127.0.0.1 /index.php?g=portal&m=page&a=index&id=1
+ERR: 模板不存在:tpl/YS/Portal/404.html
+
+[ 2015-12-11T11:27:09+08:00 ] 127.0.0.1 /index.php?g=portal&m=page&a=index&id=1
+ERR: 模板不存在:tpl/YS/Portal/404.html
+

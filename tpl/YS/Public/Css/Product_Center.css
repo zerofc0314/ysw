@@ -1,0 +1,153 @@
+.conter {
+	width: 100%;
+	float: left;
+}
+
+.swiper-container {
+	width: 1000px;
+	height: 400px;
+}
+
+.swiper-slide {
+	text-align: center;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.conter_nav {
+	width: 1000px;
+	margin: 0px auto;
+	margin-top: 22px;
+}
+
+.conter_left {
+	width: 326px;
+	float: left;
+	height: auto;
+}
+
+.conter_box {
+	margin-top:10px;
+    margin-left:15px;
+}
+
+.conter_box p {
+	line-height: 20px;
+}
+.bigbox{
+	width:325px;
+	height:auto;
+	margin-top:10px;
+}
+
+.conter_right {
+	float: right;
+	width: 658px;
+	height: auto;
+	overflow: hidden;
+	margin-top:15px;
+}
+.wire {
+	float: left;
+	margin-left: 10px;
+}
+
+.wire img {
+	margin-top: 30px;
+	height: 440px;
+}
+
+.conter_right p {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.conter_con {
+	margin-top: 5px;
+	margin-left: 50px;
+	overflow: hidden;
+	width: 600px;
+        height:auto;
+}
+
+.conterbox li {
+	float: left;
+	margin-left: 15px;
+}
+
+.conterbox li img {
+	margin-top: 15px;
+}
+
+.menu_box li {
+	float: left;
+	position: relative;
+}
+
+.menu_box .navbox li {
+	width: 62px;
+	height: 22px;
+}
+
+.menu_box .navbox li a {
+	color: white;
+	font-size: 12px;
+	line-height: 22px;
+	text-align: center;
+}
+.conter_product{
+	width:325px;
+	height:auto;
+}
+.conter_s{
+	float:right;
+	margin-top:28px;
+}
+.classify{
+	margin-top:30px;
+	width:325px;
+	height:auto;
+	float:left;
+}
+.classify_box{
+	width:325px;
+	height:auto;
+}
+.contact_more{
+	float:right;
+	margin-top:15px;
+}
+.classify_nav{
+	margin-left:10px;	
+}
+.classify_nav img{
+	margin-top:15px;
+}
+
+.menu_box li .navbox li {
+	float: none;
+	margin-top: 2px;
+	background-color: black;
+}
+
+.menu_box li .navbox {
+	position: absolute;
+	top: 60px;
+	left: 40px;
+	display: none;
+}
+
+.menu_box li:hover .navbox {
+	display: block;
+}

@@ -1,0 +1,111 @@
+.conter {
+	width: 100%;
+	float: left;
+}
+
+.conter_banner {
+	width: 1000px;
+	margin: 0px auto;
+	margin-top:40px;
+}
+.conter_brand{
+	width:1000px;
+	margin:0px auto;
+	height:auto;
+	margin-top:27px;
+}
+.conter_brand p{
+	text-align:center;
+}
+.brand{
+margin-top:40px;	
+}
+.conter_product{
+	width:1000px;
+	margin:0 auto;
+	margin-top:42px;
+}
+.conter_product p{
+	text-align:center;
+}
+.conter_h{
+	width:1000px;
+	margin:0px auto;
+	margin-top:50px;
+}
+.conter_h h3{
+	color:black;
+	font-size:30px;
+	margin-left:228px;
+	font-family:"宋体";
+}
+.conter_h h4{
+	font-family:"宋体";
+	font-size:18px;
+	color:#151717;
+	width:550px;
+	margin-top:25px;
+	margin-left:228px;
+}
+.conter_box{
+	width:1000px;
+	margin:0px auto;
+	margin-left:105px;
+	margin-top:34px;
+}
+.conter_box img{
+	margin-right:40px;
+}
+.conter_production{
+	width:1000px;
+	margin:0 auto;
+	margin-top:60px;
+}
+.conter_production p{
+	text-align:center;
+}
+.production-box{
+	width:1000px;
+	float:left;
+	margin-left:100px;
+	margin-top:45px;
+}
+.bigbox{
+	width:237px;
+	height:156px;
+	float:left;
+	margin-left:25px;
+	margin-bottom:50px;
+}
+.span_a a{
+	margin-top:10px;
+}
+.bigbox .span_a{
+	margin-top:25px;
+}
+.conter_CertificateNumber{
+	width:1000px;
+	margin:0px auto;
+}
+.CertificateNumber_box p{
+	text-align:center;
+}
+.CM_box {
+	margin-top:50px;
+}
+.CM_box p{
+	text-align:center;
+}
+.C_bigbox{
+	margin-top:48px;
+}
+.CM_top{
+	width:1000px;
+	margin-top:30px;
+	margin-left:30px;
+	overflow:hidden;
+}
+.CM_top p{
+	float:left;
+    margin-left:50px;
+}

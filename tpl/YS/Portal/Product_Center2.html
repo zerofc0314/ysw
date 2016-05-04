@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<tc_include file="Public:seo" />
+		<link rel="stylesheet" href="__TMPL__Public/Css/Product_Center.css" type="text/css" />
+		<link rel="stylesheet" href="__TMPL__Public/Css/swiper.3.2.7.min.css" type="text/css" />
+                
+                <style type="text/css">
+                    .conter_ban{margin-top:44px;}
+                </style>
+                
+	</head>
+
+	<body>
+
+                <tc_include file="Public:header" />
+
+		<div class="conter">
+			<!--背景图-->
+			
+                        <tc_include file="Public:animation" />
+                        
+			<div class="conter_nav">
+				<div class="conter_left">
+					<!--产品分类-->
+					
+					<div class="classify">
+						<div class="classify_box">
+							<span><img src="__TMPL__Public/Images/classify.png"></span>
+                                                        <!--
+							<span class="contact_more">
+                                                            <a href="#">更多<img src="__TMPL__Public/Images/more.png"></span>
+                                                        -->
+						</div>
+                                            
+                                                <php>
+                                                    $subNav=sp_get_child_terms(11);
+                                                </php>
+                                            
+						<div class="classify_nav">
+                                                       <volist name="subNav" id="v">
+							<div>
+                                                            <img src="__TMPL__Public/Images/icon1.png" />
+                                                            <a href="{:leuu('Portal/list/index',array('id'=>$v['term_id']))}">{$v.name}</a>
+                                                        </div>
+                                                        </volist>
+						</div>
+					</div>
+					<!--产品电话-->
+					<div class="bigbox">
+						<div class="conter_product">
+							<span><img src="__TMPL__Public/Images/contact.png"></span>
+                                                        <!--
+							<span class="conter_s"><a href="">更多<img src="__TMPL__Public/Images/more.png"></a></span>
+                                                        -->
+						</div>
+						<div class="conter_box">
+							<p>联系人：戴小姐</p>
+						<p>电话：0791-87368599</p>
+						<p>Q Q ：2022406149</p>
+						<p><a href="http://www.jxhknet.com">网址：http://www.jxhknet.com</a></p>
+						<p>邮箱：407037781@qq.com</p>
+						<p>地址：南昌市高新技术开发区火炬大街807号泰豪
+							<br>大厦B座201室</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="wire">
+					<img src="__TMPL__Public/Images/wire.png">
+				</div>
+				<!--产品展示-->
+
+                                <php>
+                                    $data=$_SERVER['QUERY_STRING'];
+                                    $data_new=strrchr($data,"=");                                
+                                    $id=substr($data_new,1);//(string)
+                                    $lists=sp_sql_posts_paged_bycatid($id,"field:tid,smeta;limit:0,6;order:post_date desc;",6);
+                                </php> 
+                                
+				<div class="conter_right">
+					<p><img src="__TMPL__Public/Images/product.png" </p>
+						<div class="conter_con">
+							<ul class="conterbox">
+                                                            <volist name="lists['posts']" id="v">
+                                                        
+                                                                <php>
+                                                                    $smeta=json_decode($v['smeta'], true);
+                                                                </php>
+                                                                
+								<li>
+                                                                    <a href="{:leuu('Portal/article/index',array('id'=>$v['tid']))}">
+                                                                        <img src="{:sp_get_asset_upload_path($smeta['thumb'])}" />
+                                                                    </a>
+								</li>
+                                                            
+                                                            </volist>
+							</ul>
+						</div>
+                                        
+                                                <div  class="pagination" style="margin-top:30px;" >
+                                                    <ul style="width:420px;margin-left:150px;">
+                                                        {$lists['page']}
+                                                    </ul>
+                                                </div>
+                                    
+                                   
+                                    <style type="text/css">
+                                         .pagination ul li:frist{margin-left:50px;}
+                                         .pagination ul li{height:100%;width:50px;float:left;}
+                                        .conterbox li a img{padding-top:10px;}
+                                    </style>  
+                                        
+				</div>
+			</div>
+		</div>
+		<!--底部开始-->
+		
+                         <tc_include file="Public:footer" />
+                
+		</div>
+		</div>
+
+		<script type="text/javascript" src="Static/Js/swiper.3.2.7.min.js"></script>
+
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				pagination: '.swiper-pagination',
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				paginationClickable: true,
+				spaceBetween: 30,
+				centeredSlides: true,
+				autoplay: 2500,
+				autoplayDisableOnInteraction: false
+			});
+		</script>
+	</body>
+
+</html>

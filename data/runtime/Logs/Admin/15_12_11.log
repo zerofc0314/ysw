@@ -1,0 +1,23 @@
+[ 2015-12-11T11:10:50+08:00 ] 127.0.0.1 /index.php?g=Admin&m=setting&a=site_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `ax_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ax_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ax_options` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ax_options` WHERE ( option_name='site_options' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `ax_options` SET `option_id`='2',`option_name`='site_options',`option_value`='{\"site_name\":\"\\u57fa\\u7840\\u63a7\\u5236\\u5305\",\"site_host\":\"http:\\/\\/www.bendibase.com\\/\",\"site_tpl\":\"YS\",\"site_adminstyle\":\"bluesky\",\"site_icp\":\"\",\"site_admin_email\":\"860003286@qq.com\",\"site_tongji\":\"\",\"site_copyright\":\"\",\"site_seo_title\":\"\\u57fa\\u7840\\u63a7\\u5236\\u5305\",\"site_seo_keywords\":\"\",\"site_seo_description\":\"\\u5185\\u5bb9\\u7ba1\\u7406\\u6846\\u67b6\",\"urlmode\":\"0\",\"html_suffix\":\"\",\"comment_time_interval\":60}' WHERE ( option_name='site_options' ) [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ax_options` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `ax_options` WHERE ( option_name='cmf_settings' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `ax_options` (`option_name`,`option_value`) VALUES ('cmf_settings','{\"banned_usernames\":\"\"}') [ RunTime:0.0010s ]
+
+[ 2015-12-11T11:18:36+08:00 ] 127.0.0.1 /index.php?g=Admin&m=route&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\RouteModel
+
+[ 2015-12-11T11:18:50+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-12-11T11:18:50+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+

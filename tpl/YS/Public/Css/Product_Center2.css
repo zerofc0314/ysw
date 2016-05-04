@@ -1,0 +1,103 @@
+.conter {
+	width: 100%;
+	float: left;
+}
+
+.conter_ban {
+	width: 1000px;
+	margin: 0px auto;
+	height: 400px;
+	margin-top: 45px;
+}
+
+.conter_nav {
+	width: 1000px;
+	margin: 0px auto;
+	margin-top: 22px;
+}
+
+.conter_left {
+	width: 326px;
+	float: left;
+}
+
+.conter_box {
+	margin-top: 40px;
+	margin-left: 30px;
+}
+
+.conter_box p {
+	line-height: 20px;
+}
+
+.conter_s {
+	float: right;
+	margin-top: 25px;
+	font-size: 12px;
+	color: #655e54;
+	font-family: "宋体";
+	margin-right: 15px;
+}
+
+.conter_right {
+	float: right;
+	width: 658px;
+	height: auto;
+	overflow: hidden;
+}
+.wire{
+	float:left;
+	margin-left:10px;
+}
+.wire img{
+	margin-top:30px;
+	height:440px;
+}
+.conter_right p {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.conter_con {
+	margin-top: 25px;
+	margin-left: 50px;
+	overflow: hidden;
+}
+
+.conter_con img {
+	margin-right: 15px;
+	float: left;
+}
+
+.menu_box li {
+	float: left;
+	position: relative;
+}
+
+.menu_box .navbox li {
+	width: 62px;
+	height: 22px;
+}
+
+.navbox li a {
+	color: white;
+	line-height: 22px;
+	text-align: center;
+}
+
+.menu_box li .navbox li {
+	float: none;
+	margin-top: 2px;
+	background-color: black;
+}
+
+.menu_box li .navbox {
+	position: absolute;
+	top: 60px;
+	left: 40px;
+	display: none;
+}
+
+.menu_box li:hover .navbox {
+	display: block;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{$site_seo_title} {$site_name}</title>
+        <meta name="keywords" content="{$site_seo_keywords}" />
+        <meta name="description" content="{$site_seo_description}">
+        <meta name="msapplication-tap-highlight" content="yes" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+        <link rel="stylesheet" href="__TMPL__Static/css/custom.css">
+        <script type="text/javascript">
+
+            if (navigator.userAgent.indexOf("compatible") > -1 && navigator.userAgent.indexOf("MSIE") > -1) {
+                document.write("<script src=\"__TMPL__Static/js/jquery-1.9.1.min.js\"><\/script>");
+                document.write("<script src=\"__TMPL__Static/js/html5.js\"><\/script>");
+            } else {
+                document.write("<script src=\"__TMPL__Static/js/jquery-2.1.0.min.js\"><\/script>");
+            }
+            ;
+        </script>
+        <script src="__TMPL__Static/js/modernizr-2.6.2.min.js"></script>
+
+    </head>
+    <body class="show-nav nav-center home-page yo-anim-enabled">
+    <tc_include file="Public:main-nav" />
+    <tc_include file="Public:mobile-nav" />
+    <header id="home" class="main-section home hidden-xs"> 
+        <div class="home-fullscreen"> 
+            <div class="container-fluid">
+                <div class="basic-info ">
+                    <div class="clearfix"></div>
+                    <div class="open-daily yo-anim yo-anim-fade-ltr" data-animation-delay="200">
+                        <span class="name">江西宏开养生科技</span>
+                        <span class="fa fa-phone">&nbsp;4006665418</span>
+                        <span class="fa fa-phone">&nbsp;0791-87368599</span>
+                        <span class="fa fa-qq">&nbsp;860003286</span>
+                        <span class="fa fa-home">&nbsp;江西省南昌市火炬大街807号泰豪商务大厦B座201室</span>
+                    </div>
+
+                    <ul class="social-icon yo-anim yo-anim-fade-ltr" data-animation-delay="1400">
+                        <li>
+                            <a href="#"><i class="fa fa-send-o"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="home-parallax opacity-50">
+                <div data-parallaxify-range="100" class="parallax-layer" style="background-image: url(__TMPL__Static/img/bg.jpg); "></div>
+            </div>
+        </div>
+    </header>
+    <div class="visible-xs mobile-basic-info">
+        <div id="footer-spacer"></div>
+         <tc_include file="Public:page-footer" />
+        <div class="home-bg-image"></div>
+    </div>
+   
+    <tc_include file="Public:footer" />
+</body>
+</html>

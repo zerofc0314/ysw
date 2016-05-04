@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+    <admintpl file="Public/header" />
+    <title>模型管理</title>
+</head>
+<body>
+    <div class="pd-20">
+        <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 模型管理  <a class="btn btn-success radius r mr-20" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+        <div class="cl pd-5 bg-1 bk-gray mt-20"> 
+            <span class="l"> 
+                <a href="javascript:;" class="btn btn-danger radius" onclick="model('增加模型', '{:U('Admin/SiteModel/add')}')"><i class="Hui-iconfont">&#xe6e2;</i> 添加模型</a> 
+                <a class="btn btn-primary radius" href="javascript:;" >
+                    <i class="Hui-iconfont">&#xe600;</i> 导入模型</a> 
+            </span> <span class="r">共有数据：<strong>54</strong> 条</span> 
+        </div>
+        <div class="mt-20">
+            <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer">
+                <table class="table table-border table-bordered table-hover table-bg">
+                    <thead>
+                        <tr class="text-c">
+                            <th width="40">modelid</th>
+                            <th width="150">模型名称</th>
+                            <th width="100">数据表</th>
+                            <th width="">描述</th>
+                            <th width="50">状态</th>
+                            <th width="50">数据量</th>
+                            <th width="260">管理操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <foreach name="data" item="v">
+                        <tr>
+                            <td style="text-align:center">{$v.modelid}</td>
+                            <td style="text-align:center">{$v.name}</td>
+                            <td style="text-align:center">{$v.tablename}</td>
+                            <td style="text-align:center">{$v.d}</td>
+                            <td class="status c-red" style="text-align:center">
+                        <if condition="$v['disabled'] eq 0"> √<else />  ╳ </if>
+                        </td>
+                        <td style="text-align:center">{$v.sort}</td>
+                        <td style="text-align:center">
+                            <a title="字段管理" href="javascript:;" onclick="" style="text-decoration:none">字段管理</a>&nbsp;|
+                            <a title="修改" href="javascript:;" onclick="model('修改模型','{:U('Admin/SiteModel/edit',array('modelid'=>$v[modelid]))}')" style="text-decoration:none">修改</a>&nbsp;|
+                            <a title="禁用" href="javascript:;" onclick="model_stop(this, '{$v.modelid}')" style="text-decoration:none"> <if condition="$v['disabled'] eq 0"> 禁用<else /> 启用 </if></a>&nbsp;|
+                            <a title="删除" href="javascript:;" onclick="" class="ml-5" style="text-decoration:none">删除</a>&nbsp;|
+                            <a title="导出" href="javascript:;" onclick="" style="text-decoration:none">导出</a>
+                        </td>
+                        </tr>
+                    </foreach>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+     <admintpl file="Public/footer" />
+    
+    <script type="text/javascript">
+                                /*禁用*/
+                                function model_stop(obj, id) {
+                                    var status = $(obj).text();
+                                    layer.confirm('确定要' + status + '模型吗？', function (index) {
+                                        $.post('{:U("Admin/SiteModel/model_stop")}', {modelid: id}, function (e) {
+                                            if (e == 1) {
+                                                $(obj).parents("tr").find(".status").html(status == '启用' ? '√' : '╳');
+                                                $(obj).text(status == '启用' ? '禁用' : '启用');
+                                                layer.msg('已' + status + '!', {icon: (status == '启用' ? 1 : 2), time: 1000});
+                                            } else {
+                                                layer.msg('数据执行失败，请联系管理员!', {icon: 5, time: 1000});
+                                            }
+                                        });
+
+                                    });
+                                }
+                                /*删除*/
+                                function model_del(obj, id) {
+                                    layer.confirm('确定要删除模型吗？', function (index) {
+                                        $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="article_start(this,id)" href="javascript:;" title="发布"><i class="Hui-iconfont">&#xe603;</i></a>');
+                                        $(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">已下架</span>');
+                                        $(obj).remove();
+                                        layer.msg('已下架!', {icon: 5, time: 1000});
+                                    });
+                                }
+                                function model(title, url) {
+                                    layer.open({
+                                        type: 2,
+                                        area: ['700px', '530px'],
+                                        fix: false, //不固定
+                                        maxmin: true,
+                                        title: title,
+                                        content: url
+                                    });
+                                }
+    </script>
+</body>
+</html>

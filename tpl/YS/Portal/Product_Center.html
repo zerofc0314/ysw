@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<tc_include file="Public:seo" />
+		<link rel="stylesheet" href="__TMPL__Public/Css/Product_Center.css" type="text/css" />
+                <style>
+                     .conter_con {
+                        width: 600px;
+                        height: auto;
+                    }			
+                    .conterbox li{
+                        float:left;
+                    }
+                    .conterbox li img {
+                         margin-top: 15px;
+                    }
+                </style>
+                
+	</head>
+	
+	<body>
+
+                <tc_include file="Public:header" />
+		
+		<div class="conter">
+			<!--背景图-->
+                    <tc_include file="Public:animation" />
+                        
+		    <div class="conter_nav">
+				
+                               <tc_include file="Public:contact" />
+				
+				<div class="conter_right">
+                                    <p><img src="__TMPL__Public/Images/product.png"/></p>
+                                              
+                                    <php>
+                                        $subNav=sp_get_child_terms(11);
+                                    </php>
+                                    
+                                    <volist name="subNav" id="v">
+                                    <div>
+                                        <img src="__TMPL__Public/Images/icon1.png" />
+                                        <a href="{:leuu('Portal/list/index',array('id'=>$v['term_id']))}">{$v.name}</a>
+                                    </div>
+                                        
+                                </div>
+ 
+                               
+                                 <php>
+                                    $data=$_SERVER['QUERY_STRING'];
+                                    $data_new=strrchr($data,"=");                                
+                                    $id=substr($data_new,1);//(string)
+                                    $lists=sp_sql_posts_paged_bycatid($id,"field:tid,post_title,post_date;limit:0,8;order:post_date desc;",8);
+                                </php> 
+
+                               
+					<div class="conter_con" style="margin-top:0px;">
+						<ul class="conterbox">
+                                                    <volist name="lists['post']" value="vo" />
+                                                        <php>
+                                                           $smeta=json_decode($vo['smeta'], true);
+                                                        </php>
+                                                       
+							<li>
+                                                            <a href="{:leuu('Portal/article/index',array('id'=>$vo['tid']))}">
+                                                                <img src="/data/upload/{$smeta.thumb}" />
+                                                            </a>
+							</li>
+                                                     </volist>
+						</ul>
+					</div>
+                                                    
+                                                
+
+                                                
+				</div>
+			</div>
+		</div>
+		<!--底部开始-->
+		
+                <tc_include file="Public:footer" />
+                
+	
+	</body>
+</html>
